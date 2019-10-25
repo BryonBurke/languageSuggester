@@ -1,3 +1,13 @@
 h1 {
   text-align: center;
 }
+
+.btn {
+ margin-left: 25%;
+ margin-right: 25%;
+}
+
+.output {
+  text-align: center;
+  background-color: grey;
+}
