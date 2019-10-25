@@ -11,7 +11,7 @@ $(document).ready(function(){
     var userMusic = parseInt($("#musicRange").val());
     var userPatience = parseInt($("#patienceRange").val());
 
-   var total = userRick + userHot + userGetup + userTardy + userMusic +userPatience;
+   var total = (userAge / 4) + userHot + userGetup + userTardy + userMusic + userPatience;
 
 
     console.log(userAge)
@@ -24,19 +24,19 @@ $(document).ready(function(){
     console.log(total)
 
       if (total <= 10 ) {
-        $(".result").text("option1");
+        $(".result").text("C++");
       }
-      else if (total > 10 && <20 ) {
-        $(".result").text("option2");
+      else if (total > 10 && total <= 20 ) {
+        $(".result").text("Java Script");
       }
-      else if (total > 20 && <30) {
-        $(".result").text("option3");
+      else if (total > 20 && total <= 30) {
+        $(".result").text("Ada");
       }
-      else if (total > 30 && <40) {
-        $(".result").text("option4");
+      else if (total > 30 && total <= 40) {
+        $(".result").text("Basic");
       }
-      else if (total > 40 && <50) {
-        $(".result").text("option5");
+      else if (total > 40 && total <=50) {
+        $(".result").text("Pascal");
       }
 
   });
