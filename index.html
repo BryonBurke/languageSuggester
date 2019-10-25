@@ -1,9 +1,9 @@
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scripts/scripts.js" charset="utf-8"></script>
+    <script src="js/jquery-3.4.1.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
     <meta charset="utf-8">
     <title></title>
   </head>
@@ -12,97 +12,49 @@
       <div class="jumbotron">
         <h1>Programming Language Selector</h1>
       </div>
-
-      <form id="survey">
-        <hr>
-        <p>Who is is your favorite Marvel Character? </p>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="marvel" id="ironMan" value="male" checked>
-          <label class="form-check-label" for="exampleRadios1">Iron Man</label>
+      <form id="calculator">
+        <div class="form-group">
+          <label for="input1">1st number:</label>
+          <input id="input1" class="form-control" type="text">
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-          <label class="form-check-label" for="exampleRadios2">Black Widow</label>
+        <div class="form-group">
+          <label for="input2">2nd number:</label>
+          <input id="input2" class="form-control" type="text">
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-          <label class="form-check-label" for="exampleRadios2">Hulk</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="add" checked>
+            add
+          </label>
         </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="subtract">
+            subtract
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="multiply">
+            multiply
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="divide">
+            divide
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Go!</button>
+      </form>
 
-        <!-- <form id="survey">
-          <hr>
-          <p>Whis is your favorite Ice Cream flavor? </p>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
-            <label class="form-check-label" for="exampleRadios1">Chocolate</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-            <label class="form-check-label" for="exampleRadios2">Strawberry</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-            <label class="form-check-label" for="exampleRadios2">Vanilla</label>
-          </div>
 
-          <form id="survey">
-            <hr>
-            <p>What do you prefor? </p>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
-              <label class="form-check-label" for="exampleRadios1">A bird in the hand</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-              <label class="form-check-label" for="exampleRadios2">Two in the bush</label>
-            </div>
-            <form id="survey">
-              <hr>
-              <p>Whis is your favorite time of day? </p>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
-                <label class="form-check-label" for="exampleRadios1">Morning</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                <label class="form-check-label" for="exampleRadios2">Afternoon</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                <label class="form-check-label" for="exampleRadios2">Evening</label>
-              </div>
 
-              <form id="survey">
-                <hr>
-                <p>Whis is your favorite tree? </p>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
-                  <label class="form-check-label" for="exampleRadios1">Oak</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                  <label class="form-check-label" for="exampleRadios2">Elm</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                  <label class="form-check-label" for="exampleRadios2">Pine</label>
-                </div>
 
-                <form id="survey">
-                  <hr>
-                  <p>Whis is your favorite car? </p>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
-                    <label class="form-check-label" for="exampleRadios1">VW bug</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                    <label class="form-check-label" for="exampleRadios2">Chevy Corvette</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                    <label class="form-check-label" for="exampleRadios2">Mercedes Sprinter Van</label>
-                  </div> -->
+
+
+
+
 
 
 
