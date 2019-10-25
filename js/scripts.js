@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  // $("button").click(function(){
+  //   $(h3).show()
+  // }
   $("form#survey").submit(function(event) {
     event.preventDefault();
 
