@@ -2,38 +2,42 @@ $(document).ready(function(){
   $("form#survey").submit(function(event) {
     event.preventDefault();
 
-    // var userGender = $("input:radio[name=gender]:checked").val();
-    // var userAge = parseInt($("#age").val());
-    var userRick = parseInt($("#rickRange").val());
-    var userDay = parseInt($("#dayRange").val());
 
-    var total = userRick + userDay;
+    var userAge = parseInt($("#age").val());
+    var userRick1 = parseInt($("#rickRange1").val());
+    var userRick2 = parseInt($("#rickRange2").val());
+    var userRick3 = parseInt($("#rickRange3").val());
+    var userRick4 = parseInt($("#rickRange4").val());
 
-    // console.log(userGender)
-    // console.log(userAge)
-    // console.log(userRick)
-    //
-    // if (userGender === "female") {
-    //
-    //   if (userDay  && userRick <5) {
-    //     $(".result").text("option1");
-    //   }
-    //   else if (userAge >= 40 && userRick >=5) {
-    //     $(".result").text("option2");
-    //   }
-    //   else if (userAge >= 25 && userRick <5) {
-    //     $(".result").text("option3");
-    //   }
-    //   else if (userAge >= 25 && userRick >=5) {
-    //     $(".result").text("option4");
-    //   }
-    //   else if (userAge >= 18 && userRick <5) {
-    //     $(".result").text("option5");
-    //   }
-    //   else if (userAge >= 18 && userRick >=5) {
+   var total = userRick1 + userRick2 + userRick3 + userRick4
+
+
+    console.log(userAge)
+    console.log(userRick1)
+    console.log(userRick2)
+    console.log(userRick3)
+    console.log(userRick4)
+    console.log(total)
+
+      if (total <= 10 ) {
+        $(".result").text("option1");
+      }
+      // else if (total > 10 && <=20 ) {
+      //   $(".result").text("option2");
+      // }
+      // else if (total > 20 && <=30) {
+      //   $(".result").text("option3");
+      // }
+      // else if (total > 30 && <=40) {
+      //   $(".result").text("option4");
+      // }
+      // else if (total > 40 && <=50) {
+      //   $(".result").text("option5");
+      // }
+    //   else if (total > 10 && <=20) {
     //     $(".result").text("option6");
     //   }
-    // }
+    // // }
     //
     //
     // else if (userGender === "male") {
