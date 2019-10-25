@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // $("button").click(function(){
-  //   $(h3).show()
+  //   $(h3).show()  fix this
   // }
   $("form#survey").submit(function(event) {
     event.preventDefault();
