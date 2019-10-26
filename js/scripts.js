@@ -12,7 +12,7 @@ $(document).ready(function(){
     var userMusic = parseInt($("#musicMeter").val());
     var userPatience = parseInt($("#patienceMeter").val());
 
-   var total = (userAge / 4) + userHot + userGetup + userTardy + userMusic + userPatience;
+   var total = (userAge / 4) + userRick + userHot + userGetup + userTardy + userMusic + userPatience;
 
 
     console.log(userAge)
