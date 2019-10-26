@@ -1,18 +1,16 @@
 $(document).ready(function(){
-  // $("button").click(function(){
-  //   $(h3).show()  fix this
-  // }
+
   $("form#survey").submit(function(event) {
     event.preventDefault();
 
 
     var userAge = parseInt($("#age").val());
-    var userRick = parseInt($("#rickRange").val());
-    var userHot = parseInt($("#hotRange").val());
-    var userGetup = parseInt($("#getupRange").val());
-    var userTardy = parseInt($("#tardyRange").val());
-    var userMusic = parseInt($("#musicRange").val());
-    var userPatience = parseInt($("#patienceRange").val());
+    var userRick = parseInt($("#rickMeter").val());
+    var userHot = parseInt($("#hotMeter").val());
+    var userGetup = parseInt($("#getupMeter").val());
+    var userTardy = parseInt($("#tardyMeter").val());
+    var userMusic = parseInt($("#musicMeter").val());
+    var userPatience = parseInt($("#patienceMeter").val());
 
    var total = (userAge / 4) + userHot + userGetup + userTardy + userMusic + userPatience;
 
@@ -38,7 +36,7 @@ $(document).ready(function(){
       else if (total > 30 && total <= 40) {
         $(".result").text("Basic");
       }
-      else if (total > 40 && total <=50) {
+      else if (total > 40 && total <=100) {
         $(".result").text("Pascal");
       }
 
